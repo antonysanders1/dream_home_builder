@@ -1,7 +1,7 @@
 <div class="container">
   <header></header>
   <div class="col-md-8 col-md-offset-2">
-    <h1>Dream Home Builders</h1>
+    <h1 id="home-header">Dream Home Builders</h1>
 
     <div class="content">
       <p>Welcome to Dream Home Builders! <br>We are experts at building the home of your dreams. Use our platform's
@@ -12,11 +12,12 @@
     
     <div class="content-2">
 
-      <h3>Create An Account to Get Started!</h3>
-      <form action="">
-        <input type="text" name="name" id="name" placeholder="Name"><br>
-        <input type="email" name="email" id="email" placeholder="Email"><br>
-        <input type="password" name="password" id="password" placeholder="Password"><br>
+      <h3>Sign Up!</h3>
+      <form action="/signup" method="POST">
+        <input type="text" name="name" id="name" placeholder="Name" required><br>
+        <input type="email" name="email" id="email" placeholder="Email" required><br>
+        <input type="password" name="password" id="password" placeholder="Password" required><br>
+        <input type="submit" value="Get Started!">
         
       </form>
     </div>

@@ -13,10 +13,10 @@
 
     <link rel="stylesheet" href="/stylesheets/main.css" />
   </head>
-  <header>
-    <h1>Logo Here</h1>
-  </header>
+
   <body>
+
+
     <div class="wrapper">
 
         <%= yield %>
@@ -26,10 +26,18 @@
       </footer>
     </div>
 
+      <header>
+    <h1 id="logo">Logo Here</h1>
+  </header>
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <!--[if lt IE 7]>
       <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
       <script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
     <![endif]-->
   </body>
+
+
+
+
 </html>

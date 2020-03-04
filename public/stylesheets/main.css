@@ -19,16 +19,26 @@
         line-height: 18px;
     }
     .wrapper {
+        position: relative;
+        top: 20px;
         background: #fff;
         opacity: .75;
         -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .3);
         -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .3);
         box-shadow: 0 0 10px rgba(0, 0, 0, .3);
         margin: 16px auto;
-        max-width: 960px;
+        max-width: 60%;
         padding: 2.25%;
         /* 18px / 800px */
         width: 85%;
+    }
+    #home-header {
+        text-align: center;
+    }
+    #logout {
+        position: absolute;
+        right: 20px;
+        top: 20px;
     }
     h1 {
         font-size: 36px;
@@ -66,9 +76,15 @@
         margin-top: 20px;
         padding-top: 20px;
     }
+    #logo {
+        position: absolute;
+        left: 20%;
+        top: 0px;
+    }
 }
 
-@media screen and (max-width: 600px) {
+
+/* @media screen and (max-width: 600px) {
     .wrapper {
         -moz-box-shadow: none;
         -webkit-box-shadow: none;
@@ -87,4 +103,4 @@
         font-size: 18px;
         line-height: 24px;
     }
-}
+} */
