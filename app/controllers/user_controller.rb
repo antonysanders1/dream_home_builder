@@ -12,8 +12,7 @@ class UserController < ApplicationController
         end
       end
 
-
-      get '/home' do
+    get '/home' do
         if !logged_in?
             redirect '/'
          elsif logged_in?
@@ -21,5 +20,20 @@ class UserController < ApplicationController
             erb :'users/show'
           end
         end
+
+    get '/login' do
+        erb :'users/login'
+    end
+
+    get '/logout' do
+        if logged_in?
+          session.clear
+          redirect '/login'
+        else !logged_in?
+          redirect '/home'
+        end
+      end
+
+    
 
 end
