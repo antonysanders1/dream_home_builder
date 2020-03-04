@@ -6,11 +6,15 @@ class ApplicationController < Sinatra::Base
     set :public_folder, 'public'
     set :views, 'app/views'
     enable :sessions
-    set :session_secret, "password_security"
+    set :session_secret, "my_secret"
   end
 
   get "/" do
-    erb :welcome
+    if logged_in?
+      redirect '/home'
+    else
+        erb :welcome
+    end
   end
 
   helpers do
