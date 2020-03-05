@@ -22,7 +22,7 @@
         position: relative;
         top: 20px;
         background: #fff;
-        opacity: .75;
+        opacity: .80;
         -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .3);
         -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .3);
         box-shadow: 0 0 10px rgba(0, 0, 0, .3);
@@ -67,6 +67,15 @@
     .content-2 {
         float: left;
         width: 40%;
+    }
+    #name,
+    #email,
+    #password,
+    #signup {
+        width: 80%;
+        height: 30px;
+        text-indent: 5%;
+        margin-bottom: 10px;
     }
     .branding {
         clear: both;
