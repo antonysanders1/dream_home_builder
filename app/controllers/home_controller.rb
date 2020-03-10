@@ -61,5 +61,15 @@ class HomeController < ApplicationController
         end
     end
 
+    delete '/my-builds/:id' do
+        @home = current_user.homes.find_by(id: params[:id])
+        if @home && @home.destroy
+            redirect "/my-builds"
+        else
+            redirect "/my-builds/#{params[:id]}"
+        end
+
+    end
+
 
 end
