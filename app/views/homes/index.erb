@@ -1,5 +1,7 @@
 <h2>My Builds</h2>
 
+<a href="/logout"><h3 id="logout">Logout</h3></a>
+
 <% @homes.each do |home|%>
 <ul>
   <li><h3><a href="/my-builds/<%= home.id %>"><%= home.name %></a></h3></li>

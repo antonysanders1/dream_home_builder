@@ -50,8 +50,7 @@ class HomeController < ApplicationController
 
     patch '/my-builds/:id' do
         @home = current_user.homes.find_by(id: params[:id])
-        
-        
+
         if !params.empty?
             @home.update(name: params[:name], type_of_home: params[:type_of_home], size: params[:size], bedrooms: params[:bedrooms], bathrooms: params[:bathrooms], location: params[:location])
 
