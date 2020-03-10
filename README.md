@@ -1,17 +1,15 @@
 Dream Home Builder:
 Welcome to my Sinatra app "Dream Home Builder"! This app Allows authenticated users to create specs on different homes that they'd like to live in and keeps them in a list. Users can Create, Read, Update, or Delete their builds at anytime!
 
-Installation:
+Installation & Development:
 
 Run '$ bundle install' to ensure all gems are properly installed
+Type '$ rake db:migrate' to create Active Record Database
 
 
 Usage:
 
 Type 'rackup' or 'shotgun' in the terminal. Then select the link dispayed in the terminal and open in an any web browser. (ex: http://127.0.0.1:9393/)
-
-
-Development:
 
 
 
