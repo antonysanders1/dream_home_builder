@@ -1,6 +1,7 @@
  <h2>Edit Your Build: <%= @home.name%></h2>
 
-<form action="/my-builds" method="POST">
+<form action="/my-builds/<%=@home.id%>" method="POST">
+    <input id="hidden" type="hidden" name="_method" value="patch">
     <p>Project Name <input type="text" id="projectname" name="name" value="<%= @home.name%>" required></p><br>
     <p>Type of Home  <select name="type_of_home" id="type_of_home" required>
         <option value=""><%= @home.type_of_home%></option>
@@ -34,8 +35,8 @@
         <option value="9">9</option>
         <option value="10">10</option>
     </select>
-    Bathrooms <select name="bathrooms" id="bathrooms" value="<%= @home.bathrooms%>" required>
-        <option value="">Select One</option>
+    Bathrooms <select name="bathrooms" id="bathrooms" required>
+        <option value=""><%= @home.bathrooms%></option>
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -48,5 +49,5 @@
         <option value="10">10</option>
     </select></p><br>
     <p>Location <input type="text" id="location" name="location" value="<%= @home.location%>" required></p><br>
-    <input type="submit" value="Complete" id="submit">
+    <input type="submit" value="Update" id="submit">
 </form>
