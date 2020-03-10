@@ -1,0 +1,7 @@
+<h2>My Builds</h2>
+
+<% @homes.each do |home|%>
+<ul>
+  <li><h3><a href="/my-builds/<%= home.id %>"><%= home.name %></a></h3></li>
+</ul>
+<%end%>

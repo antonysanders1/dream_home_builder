@@ -1,0 +1,16 @@
+
+<h2><%= @home.name%></h2>
+<p><strong>Type of Home:</strong>  <%= @home.type_of_home%></p>
+<p><strong>Home Size:</strong>  <%= @home.size%></p>
+<p><strong>Bedrooms:</strong>  <%= @home.bedrooms%></p>
+<p><strong>Bathrooms:</strong> <%= @home.bathrooms%></p>
+<p><strong>Location:</strong> <%= @home.location%></p>
+
+<a href="/my-builds/<%= @home.id %>/edit"><input type ="submit" value ="Edit Dream Home"></a>
+<br>
+<br>
+<form method="POST" action="/my-builds/<%= @home.id %>">
+  <input id="hidden" type="hidden" name="_method" value="delete">
+  <input type="submit" value="Delete Build">
+</form><br>
+<a href="/my-builds"><button>Back to Builds</button></a>

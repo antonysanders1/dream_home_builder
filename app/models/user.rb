@@ -1,4 +1,8 @@
 class User < ActiveRecord::Base
- has_secure_password
- has_many :homes
+ 
+    validates :email, uniqueness: true
+    has_secure_password
+    has_many :homes
+
+
 end 

@@ -2,7 +2,7 @@ class Homes < ActiveRecord::Migration
   def change
     create_table :homes do |col|
       col.string :name
-      col.string :type
+      col.string :type_of_home
       col.string :size
       col.integer :bedrooms
       col.integer :bathrooms
