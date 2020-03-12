@@ -21,7 +21,7 @@
         <option value="Underground Home">Underground Home</option>
         <option value="Yurt">Yurt</option>
     </select></p><br>
-    <p>Size <input type="text" id="size" name="size" value="<%= @home.size%>" required></p><br>
+    <p>Size <input type="text" id="size" name="size" value="<%= @home.size%>" pattern="[a-zA-Z0-9, ]*" required></p><br>
     <p>Bedrooms <select name="bedrooms" id="bedrooms" required>
         <option value=""><%= @home.bedrooms%></option>
         <option value="1">1</option>
